@@ -1,0 +1,13 @@
+.uk-navbar-left .uk-navbar-nav {
+    display: none;
+}
+
+@media only screen and (min-width: 960px) {
+    #burger-menu {
+        display: none;
+    }
+
+    .uk-navbar-left .uk-navbar-nav {
+        display: flex;
+    }
+}
