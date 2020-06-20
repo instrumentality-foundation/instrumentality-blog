@@ -1,30 +1,23 @@
 <script>
-	export let name;
+	import '../node_modules/uikit/dist/css/uikit.min.css';
+	import '../node_modules/uikit/dist/js/uikit.min.js';
+	
+	import Navbar from './reusables/Navbar.svelte';
+	import MainHeader from './reusables/MainHeader.svelte';
+	import ArticleList from './reusables/ArticleList.svelte';
+
 </script>
 
+<Navbar />
+
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<MainHeader />
+
+	<!-- A list of articles -->
+	<ArticleList />
+
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
 </style>
