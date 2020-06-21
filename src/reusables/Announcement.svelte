@@ -1,6 +1,5 @@
 <script>
     export let title;
-    export let link;
 </script>
 
 <style>
@@ -14,24 +13,24 @@
         font-size: 1.7em;
     }
 
-    .uk-button {
-        width: 70%;
+    span {
         background: white;
         border-radius: .5em;
+        padding: 1em 3em 1em 3em;
     }
 
     .uk-flex {
         align-items: center;
     }
 
-    button a {
+    span a {
         text-decoration: none;
         color: #262229;
         font-family: 'Noto Sans', sans-serif;
         font-size: 1em;
     }
 
-    button a:hover {
+    span a:hover {
         color: #a41f76;
     }
 
@@ -41,11 +40,7 @@
             font-size: 2.5em;
         }
 
-        .uk-button {
-            width: 45%;
-        }
-
-        button a {
+        span a {
             font-size: 1.2em;
         }
     }
@@ -56,11 +51,7 @@
             font-size: 3em;
         }
 
-        .uk-button {
-            width: 30%;
-        }
-
-        button a {
+        span a {
             font-size: 1.2em;
         }
     }
@@ -71,7 +62,7 @@
             font-size: 3.5em;
         }
 
-        button a {
+        span a {
             font-size: 1.8em;
         }
     }
@@ -80,7 +71,7 @@
 <div class="uk-flex uk-flex-column" id="announcement-banner">
     <h1 class="uk-text-center">{title}</h1>
 
-    <button class="uk-button uk-button-large uk-margin-xlarge-top">
-        <a href={link}>Read everything about it</a>
-    </button>
+    <span class="uk-margin-xlarge-top">
+        <a href="#article-card" uk-scroll>Find the story bellow</a>
+    </span>
 </div>

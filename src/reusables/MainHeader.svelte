@@ -1,7 +1,7 @@
 <script>
     import Announcement from './Announcement.svelte';
 
-    let title = "🎉 The Instrumentality Foundation launches version 0.2 of the Instrumentality Blog 🎉"
+    let title = "🎉 The Instrumentality Foundation launches version 1.0 of the Instrumentality Blog 🎉"
 </script>
 
 <style>

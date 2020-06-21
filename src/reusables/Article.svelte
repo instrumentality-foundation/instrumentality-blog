@@ -2,6 +2,7 @@
     export let image = "/assets/images/placeholder.jpg";
     export let title = "Placeholder title";
     export let description = "This is a placeholder description";
+    export let id;
 </script>
 
 <style>
@@ -25,15 +26,30 @@
         color: white;
     }
 
+    h2.uk-modal-title {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1.2em;
+        color: black;
+    }
+
+    .uk-card-body p {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1em;
+    }
+
     /*On larger devices*/
     @media only screen and (min-width: 960px) {
         .uk-card-media-top img {
             height: 50vh;
         }
+
+        h2.uk-modal-title {
+            font-size: 2em;
+        }
     }
 </style>
 
-<div class="uk-card uk-card-default uk-margin-bottom">
+<div id="article-card" class="uk-card uk-card-default uk-margin-bottom">
 
     <div class="uk-card-media-top">
         <!-- Card header -->
@@ -41,18 +57,18 @@
     </div>
 
     <div class="uk-card-body">
-        <h3 class="uk-card-title">{title}</h3>
+        <h3 class="uk-card-title uk-text-center">{title}</h3>
         <p>{description}...</p>
         
         <div class="uk-flex uk-flex-center">
-            <button class="uk-button" uk-toggle="target: #full-article" type="button">Read more</button>
+            <button class="uk-button" uk-toggle="target: #{id}" type="button">Read more</button>
         </div>
 
     </div>
 
 </div>
 
-<div id="full-article" class="uk-modal-container" uk-modal>
+<div class="uk-modal-container" id={id} uk-modal>
 
     <div class="uk-modal-dialog">
 
@@ -66,5 +82,4 @@
         </div>
     </div>
 
-    
 </div>

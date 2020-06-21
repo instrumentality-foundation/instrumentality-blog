@@ -2,5 +2,27 @@
 
 body {
     background-image: linear-gradient(to right bottom, #ff9650, #fe8d51, #fc8453, #fa7b55, #f77257, #f2665a, #ec5b5e, #e55062, #d84168, #c9336d, #b82772, #a41f76);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    color: #262229;
+}
+
+.uk-modal-body p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.1em;
+    color: black;
+}
+
+hr.uk-divider-icon, hr.uk-divider-icon::before, hr.uk-divider-icon::after {
+    border-color: #f3665b;
+}
+
+code, pre, :not(pre)>code {
+    background-color: rgb(245, 245, 245);
+    color: #D33B69;
+}
+
+@media only screen and (min-width: 960px) {
+    .uk-modal-body p {
+        font-size: 1.3em;
+    }
 }

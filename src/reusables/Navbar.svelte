@@ -93,8 +93,8 @@
     }
 
     .uk-navbar-container {
-      background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(1em) saturate(150%);
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(1em) saturate(300%);
     }
 
     .uk-navbar-nav li a {
