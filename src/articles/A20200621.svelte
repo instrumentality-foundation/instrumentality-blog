@@ -52,31 +52,22 @@ id="A20200621">
         and an id which must be unique, therefore I'm using the file name again. Then, I'm just writing the article using the appropriate HTML tags. This article is later imported in the
         <code>ArticleList.svelte</code> component like so:
 
-        <code class="uk-display-block">
-        <br>    
-            &lt;script&gt;
-            <br>
-                &emsp;import A20200621 from '../articles/A20200621.svelte';
-            <br>
-            &lt;/script&gt;
-        </code>
+    </p>
 
+        <pre>&lt;script&gt;
+    import A20200621 from '../articles/A20200621.svelte';
+&lt;/script&gt;</pre>
+
+    <p>
         In the <code>ArticleList.svelte</code> component I just include the actual article inside <code>&lt;Lazy&gt;</code> tags and that's it. The article appears on the page.
     </p>
 
-    <code class="uk-display-block">
-    <br>
-    &lt;section class="uk-section uk-flex uk-flex-column uk-flex-center"&gt;
-    <br>
-        &emsp&lt;Lazy height=&lbrace;500&rbrace;&gt;
-        <br>
-            &emsp&emsp&lt;A20200621 /&gt;
-            <br>
-        &emsp&lt;/Lazy&gt;
-        <br>
+    <pre>&lt;section class="uk-section uk-flex uk-flex-column uk-flex-center"&gt;
+    &lt;Lazy height=&lbrace;500&rbrace;&gt;
+        &lt;A20200621 /&gt;
+    &emsp&lt;/Lazy&gt;
 
-    &lt;/section&gt;
-    </code>
+&lt;/section&gt;</pre>
 
     <h2>
         Why Svelte.js and UIkit?
