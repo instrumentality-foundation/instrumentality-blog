@@ -1,5 +1,6 @@
 <script>
   import Icon from "svelte-awesome";
+  import Team from "../Team.svelte";
   import { faBars } from "@fortawesome/free-solid-svg-icons";
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
 </script>
@@ -141,7 +142,7 @@
 
         <ul class="uk-navbar-nav">
           <li>
-            <a href="">Meet the team</a>
+            <a href="#team-modal" uk-toggle>Meet the team</a>
           </li>
           <li>
             <a>Follow us on</a>
@@ -182,7 +183,7 @@
 
       <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
         <li>
-          <a href="">Meet the team</a>
+          <a href="#team-modal" uk-toggle>Meet the team</a>
         </li>
         <li class="uk-parent">
           <span>Follow us on:</span>
@@ -202,3 +203,5 @@
     </div>
   </div>
 </header>
+
+<Team />
